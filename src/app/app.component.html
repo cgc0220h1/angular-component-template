@@ -1,1 +1,4 @@
-<app-countdown-timer [second]="'abc'"></app-countdown-timer>
+<label for="input-time">Input Time</label>
+<input type="text" id="input-time" [(ngModel)]="secondsInput">
+<app-countdown-timer [seconds]="secondsInput" (finish)="updateCountdownStatus($event)"></app-countdown-timer>
+<app-message-timer [status]="isCountdownStop"></app-message-timer>
