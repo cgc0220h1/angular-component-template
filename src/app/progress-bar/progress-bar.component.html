@@ -1,0 +1,8 @@
+<h2>Progress Bar</h2>
+<label for="slider">Slide to increase the bar</label>
+<input id="slider" type="range" min="0" max="100" value="10" [(ngModel)]="width">
+<div class="progress-bar" [style.backgroundColor]="backgroundColor">
+  <div class="progress" [ngStyle]="{
+  backgroundColor: progressColor,
+  width: width + '%'}"></div>
+</div>
