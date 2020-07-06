@@ -8,6 +8,7 @@ import {MessageTimerComponent} from './message-timer/message-timer.component';
 import {FormsModule} from '@angular/forms';
 import {RatingBarComponent} from './rating-bar/rating-bar.component';
 import {PipeDemoComponent} from './pipe-demo/pipe-demo.component';
+import { NameCardComponent } from './name-card/name-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {PipeDemoComponent} from './pipe-demo/pipe-demo.component';
     MessageTimerComponent,
     RatingBarComponent,
     PipeDemoComponent,
+    NameCardComponent,
   ],
   imports: [
     BrowserModule,
